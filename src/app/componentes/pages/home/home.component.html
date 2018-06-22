@@ -1,0 +1,85 @@
+<app-modal-popup id="openModal" [AbriDialog]="OpenDialog" (AbriDialogRpt)="OpenDialog = $event" [CerrarEsc]="true" [CerrarClickFuera]="true" [OcuparTodoElContenedor]="true">
+        <div class="p-5 p-5 p-5">
+                <h2><strong>Howdy</strong>, I'm a dialog box</h2>
+                <div><button class="action" (click)="OpenDialog=false">Close</button></div>
+        </div>
+</app-modal-popup>
+<div class="p-3 m-3 animated fastIn">
+    <div>
+            <h5>Operatividad</h5>
+            <hr class="line">
+            <div class="xMiBoton_icon">
+                <img src="assets/img/carta.png">
+                <p>Elaborar Carta</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/tomar.pedido.png">
+                <p>Tomar Pedido</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/caja.png">
+                <p>Caja</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/control.pedido.png">
+                <p>Control de Pedidos</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/venta.rapida.png">
+                <p>Venta Rapida</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/despacho.png">
+                <p>Zona de Despacho</p>
+            </div>
+    </div>
+    <br><br>
+    <div>
+            <h5>Logistica</h5>
+            <hr class="line">
+            <div class="xMiBoton_icon">
+                <img src="assets/img/compras.png">
+                <p>Compras</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/distribuicion.png">
+                <p>Distribuicion</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/porcionar.png">
+                <p>Porcionar</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/control.pedido.png">
+                <p>Recetas y costos</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/productos.porciones.png">
+                <p>Productos y Porciones</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/despacho.png">
+                <p>Entradas y Salidas del Almacen</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/despacho.png">
+                <p>Inventarios</p>
+            </div>
+    </div>
+    <br>
+    <div>
+            <h5>Configuracion</h5>
+            <hr class="line">
+            <div class="xMiBoton_icon">
+                <img src="assets/img/parametros.sistema.png">
+                <p>Parametros del sistema</p>
+            </div>
+            <div class="xMiBoton_icon">
+                <img src="assets/img/tomar.pedido.png">
+                <p>Usuarios</p>
+            </div>
+    </div>
+      <!-- <br><br><br><br>
+      <button>loader</button>
+      <button (click)="OpenDialog=true">modal</button>  -->
+</div>

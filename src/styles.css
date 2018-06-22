@@ -1,0 +1,234 @@
+/* You can add global styles to this file, and also import other style files */
+/* html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+    text-size-adjust: 100%;
+} */
+
+@charset "utf-8";@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:url(1.woff) format('woff');-webkit-font-stroke:0.3px;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:url('1.woff') format('woff');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:url('2.woff') format('woff');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:url('3.woff') format('woff');}
+body{color:#333;font:13px/18px 'Open Sans',arial,sans-serif !important;font-weight:400;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+
+html, body {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    
+}
+body {
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 0;
+    background-color: #eeeeee;
+}
+/* .contenedor {
+    width: 100%;
+    height: 100%;
+} */
+
+hr.blanco {
+    background: #616161;
+    width: 100%;
+    height: .02em;
+}
+
+hr.negro {
+    background: #212121;
+    width: 100%;
+    height: .02em;
+}
+hr.negro-2 {
+    background: #212121;
+    width: 100%;
+    height: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+
+hr.line {
+    background: #bdbdbd;
+    width: 100%;
+    height: .01em;
+}
+hr.line-menu {
+        background: #393E46;
+        width: 100%;
+        height: .01em;
+    }
+    
+    hr.line-menu-2 {
+        background: #393E46;
+        width: 100%;
+        height: .05em;
+    }
+
+input{display: block;border:0; border: none;padding:0; border-bottom: 1px solid rgb(204, 204, 204);
+    padding-top: 6px;
+    padding-right: 0px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+}:focus {
+    outline: none; 
+    border-bottom: .09em solid rgb(26, 76, 240);
+  }
+input{line-height:normal}
+
+.font-13{
+    font-size: 13px;
+}
+
+.mitollbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px 16px 8px;
+    background: rebeccapurple;
+    color: #fff;
+    height: 56px;
+}
+
+.mi-panel-lateral {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    left: 0px;
+    width: 250px;
+    padding: 0;
+    background: #222831;
+    color: #bdbdbd;
+    overflow: auto;
+    z-index: 1;
+}
+
+.mi-panel-lateral.move {
+    left: 0px;
+}
+
+.menu-panel-lateral {
+    padding: 0px;
+    margin: 0px;
+}
+
+.mi-panel-lateral .title-panel-menu {
+    background-color: #1B1F27;
+    height: 56px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px
+}
+
+.menu-panel-lateral ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.menu-panel-lateral li {
+    line-height: 45px;
+    padding-left: 20px;
+    border-bottom: 1px solid #393E46;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-panel-lateral li:hover {
+    background: #34374C;
+    border-left: 5px solid #EE2B47;
+    padding-left: 15px;
+}
+
+.menu-panel-lateral .sub-menu li.activado {
+    background: #34374C;
+    border-left: 5px solid #EE2B47;
+    padding-left: 25px;
+    outline: none;
+}
+
+.menu-panel-lateral .sub-menu li {
+    line-height: 35px;
+    padding-left: 30px;
+    border-bottom: none;
+    font-weight: 300;
+}
+
+.menu-panel-lateral .sub-menu li:hover {
+    padding-left: 25px;
+}
+
+.menu-panel-lateral a {
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+.menu-panel-lateral ul .active,
+.menu-panel-lateral li .active {
+    border-left: 3px solid #d19b3d;
+    background-color: #4f5b69;
+}
+
+.main {
+    /* para centrar el dialog */
+    position: relative; 
+    margin-left: 250px; /* Same as the width of the sidenav */
+}
+/* 
+.p-5 { padding: 5px;} */
+.mi-contenedor {
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* TODO: Animaciones */
+    
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    /* -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; */
+}
+
+.fast {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+.xMiBoton_icon{ padding: 8px; border-radius: 5px; border: 1px solid transparent; width: 100px; vertical-align: top; text-align: center; cursor: pointer; display: inline-block; margin-right: 15px; user-select:none;}
+.xMiBoton_icon p{border-top:1px solid #b4b4b4; font-size: 12px; line-height: 15px; margin: .4em 0 .2em; padding-top: 5px;}
+.xMiBoton_icon:hover{border:1px solid #b8b8b8; background: #d8d8d8;}
+.xMiBoton_icon[disabled]{pointer-events:none;opacity:0.43;}
+
+.xMiBoton_icon_lateral{display: table;vertical-align: middle; border-radius: 5px; border: 1px solid transparent; width: auto; text-align: left; padding: 5px; cursor: pointer;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.xMiBoton_icon_lateral p{display: table-cell; vertical-align: middle; text-align: left; border-left:1px solid #CCC; font-size: 10px; line-height: 15px; padding-left: 3px;}
+.xMiBoton_icon_lateral img{display: table-cell; vertical-align: middle; text-align: left; padding-right: 3px;}
+.xMiBoton_icon_lateral:hover{border:1px solid #CCC; background: #EEEEEE;}
+.xMiBoton_icon_lateral[disabled]{pointer-events:none;opacity:0.43;}

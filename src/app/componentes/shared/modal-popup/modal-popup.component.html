@@ -1,0 +1,10 @@
+<div id="somedialog" class="dialog" #somedialog (click)="focusElment($event)">
+	<div class="main">
+			<div class="dialog__overlay"></div>
+			<div #contenedor class="dialog__content" (click)="focusElment($event)">
+			<ng-content>  
+			  
+			</ng-content> 
+			</div>
+	</div>
+</div>
