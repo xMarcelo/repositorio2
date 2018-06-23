@@ -13,13 +13,15 @@ import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { LoginComponent } from './login/login.component';
+import { ElaborarCartaComponent } from './elaborar-carta/elaborar-carta.component';
 
 @NgModule({
     declarations: [
         PagesComponent,
         HomeComponent,
         NopagefoundComponent,
-        LoginComponent
+        LoginComponent,
+        ElaborarCartaComponent
     ],
     exports: [
     ],

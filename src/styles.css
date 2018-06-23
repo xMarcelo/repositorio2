@@ -24,8 +24,19 @@ body {
 body {
     font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     margin: 0;
-    background-color: #eeeeee;
+    background-color: #f1f1f1;
 }
+.f-11 { font-size: 11px; }
+.f-12 { font-size: 12px; }
+.f-13 { font-size: 13px; }
+.f-14 { font-size: 14px; }
+.f-14 { font-size: 14px; }
+.f-15 { font-size: 15px; }
+.f-16 { font-size: 16px; }
+.f-17 { font-size: 17px; }
+.f-18 { font-size: 18px; }
+.f-19 { font-size: 19px; }
+.f-20 { font-size: 20px; }
 /* .contenedor {
     width: 100%;
     height: 100%;
@@ -55,23 +66,31 @@ hr.line {
     width: 100%;
     height: .01em;
 }
+hr.line-2 {
+    background: #e4e4e4;
+    width: 100%;
+    height: .01em;
+}
 hr.line-menu {
         background: #393E46;
         width: 100%;
         height: .01em;
     }
     
-    hr.line-menu-2 {
+hr.line-menu-2 {
         background: #393E46;
         width: 100%;
         height: .05em;
-    }
+}
+
+
 
 input{display: block;border:0; border: none;padding:0; border-bottom: 1px solid rgb(204, 204, 204);
     padding-top: 6px;
     padding-right: 0px;
     padding-bottom: 6px;
     padding-left: 0px;
+    background: transparent;
 }:focus {
     outline: none; 
     border-bottom: .09em solid rgb(26, 76, 240);
@@ -186,10 +205,15 @@ input{line-height:normal}
 /* 
 .p-5 { padding: 5px;} */
 .mi-contenedor {
-    padding-left: 20px;
-    padding-top: 1px;
+    /* padding-left: 20px;
+    padding-top: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; */
+    padding: 25px;
+}
+
+.mi-contenedor.top-0{
+    padding-top: 0;
 }
 
 /* TODO: Animaciones */
@@ -222,9 +246,11 @@ input{line-height:normal}
 }
 
 
+
 .xMiBoton_icon{ padding: 8px; border-radius: 5px; border: 1px solid transparent; width: 100px; vertical-align: top; text-align: center; cursor: pointer; display: inline-block; margin-right: 15px; user-select:none;}
-.xMiBoton_icon p{border-top:1px solid #b4b4b4; font-size: 12px; line-height: 15px; margin: .4em 0 .2em; padding-top: 5px;}
+.xMiBoton_icon p{border-top:1px solid #cecece; font-size: 12px; line-height: 15px; margin: .4em 0 .2em; padding-top: 5px;}
 .xMiBoton_icon:hover{border:1px solid #b8b8b8; background: #d8d8d8;}
+.xMiBoton_icon:hover p{border-top:1px solid #b8b8b8;}
 .xMiBoton_icon[disabled]{pointer-events:none;opacity:0.43;}
 
 .xMiBoton_icon_lateral{display: table;vertical-align: middle; border-radius: 5px; border: 1px solid transparent; width: auto; text-align: left; padding: 5px; cursor: pointer;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
@@ -232,3 +258,52 @@ input{line-height:normal}
 .xMiBoton_icon_lateral img{display: table-cell; vertical-align: middle; text-align: left; padding-right: 3px;}
 .xMiBoton_icon_lateral:hover{border:1px solid #CCC; background: #EEEEEE;}
 .xMiBoton_icon_lateral[disabled]{pointer-events:none;opacity:0.43;}
+
+
+
+.mi-card {
+    /* border :1px solid #d8d8d8; */
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* colores */
+.color-amarillo-0 {
+    background: #ffff96
+}
+
+/* car acordion info */
+.mi-accordion-info .mscom-accordion-item {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+
+.mi-accordion-info .mi-accordion-info-item-link {
+    position: relative;
+    display: block;
+    padding: 12px 0;
+}
+
+.mi-accordion-info .mi-accordion-info-item-link .mi-accordion-info-item-image {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+    vertical-align: bottom;
+    border: 1px solid transparent;
+    overflow: hidden;
+    left: 0;
+    top: 50%;
+    margin-top: -13.5px;
+}
+
+.mi-accordion-info .mi-accordion-info-item-link .mi-accordion-info-item-title {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 37px;
+}
+
+.mi-accordion-info-item-container {
+    padding-left: 37px;
+    padding-right: 37px;
+}
