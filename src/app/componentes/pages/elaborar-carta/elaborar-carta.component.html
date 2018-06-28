@@ -26,7 +26,19 @@
   <div class="row">
     <div class="col-12">
         <div class="mi-card con-borde radius-arriba radius-bajo color-blanco-0">
-            <input type="text" class="from-control form-group w-100 f-18" placeholder="SECCION">
+            
+            <div class="float-right" style="margin-bottom: -35px;">
+                <div class="d-inline-block btn btn-light btn-sm">                    
+                    <div class="d-inline-block m-0 p-0">                        
+                        <input type="number" class="no-line f-15 negrita" style="width: 35px" value="1" step="1" min="1" data-toggle="tooltip" data-placement="auto" title="Orden en la lista">
+                    </div>  
+                    <div class="d-inline-block es-link color-rojo" data-toggle="tooltip" title="Borrar Seccion">
+                      <i class="far fa-trash-alt fa-lg"></i>
+                    </div>                             
+                </div>
+            </div>
+
+            <input type="text" class="from-control form-group w-100 f-18"  placeholder="SECCION">
             <table class="table-1 w-100">
                 <thead>
                   <th width="60%"><input type="text" class="from-control form-group w-100" placeholder="ITEM"></th>
@@ -35,30 +47,39 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>CAUSITA RELLENA</td>
-                        <td align="center">5.00</td>
-                        <td align="center">SP</td>
-                      </tr>
+                        <td>
+                            <div class="d-inline-block es-link color-rojo" data-toggle="tooltip" title="Eliminar Item">
+                                <i class="far fa-trash-alt"></i>
+                            </div>
+                            <span class="pl-2">CAUSITA RELLENA</span>
+                        </td>
+                        <td align="center" appEditRowTable class="cursor">
+                            <span>5.00</span>
+                            <input type="text" attr.data-formato="numero" class="invisible w-100 text-center en-table-1" placeholder="PRECIO" value="5.00">
+                        </td>
+                        <td align="center" appEditRowTable class="cursor">
+                            <span>SP</span>
+                            <input type="text" attr.data-formato="cantidad-cadena" class="invisible w-100 text-center en-table-1" placeholder="CANTIDAD" value="SP">
+                        </td>
+                    </tr>
                     <tr>
-                        <td>CAUSITA RELLENA</td>
-                        <td align="center">5.00</td>
-                        <td align="center">SP</td>
-                      </tr>
-                      <tr>
-                          <td>CAUSITA RELLENA</td>
-                          <td align="center">5.00</td>
-                          <td align="center">SP</td>
-                        </tr>
-                        <tr>
-                            <td>CAUSITA RELLENA</td>
-                            <td align="center">5.00</td>
+                            <td>
+                                <div class="d-inline-block es-link color-rojo" data-toggle="tooltip" title="Eliminar Item">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                                <span class="pl-2">CAUSITA RELLENA</span>
+                            </td>
+                            <td align="center" appEditRowTable>
+                                <span>5.00</span>
+                                <input type="text" class="invisible w-100 text-center en-table-1" placeholder="PRECIO" value="5.00">
+                            </td>
                             <td align="center">SP</td>
-                          </tr>
-                      <tr class="total">
-                              <td class="sin-borde">-</td>
-                              <td align="center" class="sin-borde">-</td>
-                              <td align="center" class="negrita f-16 sin-borde">150</td>
-                      </tr>
+                        </tr>                    
+                    <tr class="total">
+                            <td class="sin-borde">-</td>
+                            <td align="center" class="sin-borde">-</td>
+                            <td align="center" class="negrita f-16 sin-borde">150</td>
+                    </tr>
                 </tbody>
               </table>      
         </div>

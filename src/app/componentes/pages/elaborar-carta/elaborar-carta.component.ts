@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $: any;
 @Component({
   selector: 'app-elaborar-carta',
   templateUrl: './elaborar-carta.component.html',
@@ -10,6 +10,7 @@ export class ElaborarCartaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('[data-toggle="tooltip"]').tooltip();
   }
 
 }

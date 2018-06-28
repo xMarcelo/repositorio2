@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { LoginComponent } from './login/login.component';
 import { ElaborarCartaComponent } from './elaborar-carta/elaborar-carta.component';
+import { EditRowTableDirective } from '../directivas/edit-row-table.directive';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { ElaborarCartaComponent } from './elaborar-carta/elaborar-carta.componen
         HomeComponent,
         NopagefoundComponent,
         LoginComponent,
-        ElaborarCartaComponent
+        ElaborarCartaComponent,
+        EditRowTableDirective
     ],
     exports: [
     ],
